@@ -1,0 +1,22 @@
+patch:
+  show_notifications_when: always
+  show_notifications_via_notification_center: false
+  style:
+    color_scheme: azure
+    horizontal: true
+    corner_radius: 3
+    border_height: 5
+    border_width: 5
+    inline_preedit: flase # 首行显示拼音
+    # line_spacing: 1
+    spacing: 5
+    font_point: 16
+    # font_face: 'Lantinghei TC Extralight'
+  us_keyboard_layout: true
+  app_options:
+    com.jetbrains.intellij:
+      ascii_mode: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+    com.microsoft.VSCode:
+      ascii_mode: true

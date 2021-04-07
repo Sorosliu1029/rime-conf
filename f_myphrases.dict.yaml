@@ -1,0 +1,173 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# f_myphrases.dict.yaml
+#
+#   SorosLiu <soros.liu1029@gmail.com>
+
+---
+name: f_myphrases
+version: "2021.04.07"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+# 无码表的词库
+
+# 有码表的词库, 格式
+# (注意是用制表符分割)：
+# 文字	编码	频次(可省略)
+
+API	api	10000
+BBC	bbc	10000
+JavaScript	js	10000
+Markdown	md	10000
+NBA	nba	10000
+OS X	osx	10000
+QQ	qq	10000
+TV	tv	10000
+v2ex	vtex	10000
+V2EX	vtex	10001
+Wiki	wiki	10000
+Wikipedia	wikipedia	10000
+Xbox	xbox	10000
+
+# emoji
+
+❤️	heart
+❤️	xin
+🚀	rocket
+💋	kiss
+😁	kai xin
+😃	kan
+😄	xiao
+😊	xiao
+🎈	qi qiu
+💊	yao wan
+🍀	si ye cao
+🌚🌝	jiong
+🆘	sos
+🎵	yin yue
+🏀	lan qiu
+🏆	guan jun
+☀️	tai yang
+🌙	yue liang
+🍭	bang bang tang
+
+# 常见符号
+
+⌘	cmd
+⏎	return
+⏏	eject
+⇪	cap
+⇧	shift
+⌥	opt
+⌃	ctrl
+⌫	del
+°	degree
+℃	degreec
+℉	degreef
+✓	right	10000
+✓	dui gou	10001
+✗	wrong	10000
+✗	shan chu	10000
+✗	cha	10000
+✗	cha zi	10000
+°	du	10000
+℉	hua shi du
+℃	she shi du
+
+#
+
+♂	nan	1000
+♀	nv	1000
+↑	shang	1000
+↓	xia	1000
+♥	xin	1000
+★	xing	1000
+✩	xing	1000
+♪	yin fu	1000
+♫	yin fu	1000
+→	you	1000
+↗	you shang	1000
+↘	you xia	1000
+←	zuo	1000
+↖	zuo shang	1000
+↙	zuo xia	1000
+√	gou	1000
+×	cha	1000
+囗	kuang	1000
+⑨	jiu	1000
+
+# Math
+
+∵	because
+∵	yin wei	1000
+∴	therefore
+∴	suo yi	1000
+~	sim
+∈	in
+⊂	subset
+⊆	subseteq
+∑	sum
+∏	prod
+∫	int
+∮	oint
+∀	forall
+∃	exists
+∇	nabla
+∆	triangle
+∞	infty
+∞	wu xian	1000
+≐	doteq
+
+# Greek alphabet
+
+Α	alpha	10
+Β	beta	10
+Γ	gamma	10
+Δ	delta	10
+Ε	epsilon	10
+Ζ	zeta	10
+Η	eta	10
+Θ	theta	10
+Ι	iota	10
+Κ	kappa	10
+Λ	lambda	10
+Μ	mu	10
+Ν	nu	10
+Ξ	xi	10
+Ο	omicron	10
+Π	pi	10
+Ρ	rho	10
+Σ	sigma	10
+Τ	tau	10
+Υ	upsilon	10
+Φ	phi	10
+Χ	chi	10
+Ψ	psi	10
+Ω	omega	10
+α	alpha	10
+β	beta	10
+γ	gamma	10
+δ	delta	10
+ε	epsilon	10
+ζ	zeta	10
+η	eta	10
+θ	theta	10
+ι	iota	10
+κ	kappa	10
+λ	lambda	10
+μ	mu	10
+ν	nu	10
+ξ	xi	10
+ο	omicron	10
+π	pi	10
+ρ	rho	10
+σ	sigma	10
+τ	tau	10
+υ	upsilon	10
+φ	phi	10
+χ	chi	10
+ψ	psi	10
+ω	omega	10
