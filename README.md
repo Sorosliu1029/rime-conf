@@ -1,4 +1,4 @@
-# 我的小鶴雙拼
+# 我的小鶴雙拼
 
 配方： ℞ **double-pinyin-flypy-custom**
 
