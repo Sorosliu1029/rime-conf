@@ -13,4 +13,6 @@
 
 [東風破](https://github.com/rime/plum) 安裝口令： `bash rime-install Sorosliu1029/rime-conf`
 
+本倉庫中的 `*.custom.yaml` 爲客製化文件，需要單獨複製進[用戶資料夾](https://github.com/rime/home/wiki/UserData)中
+
 授權條款：見 [LICENSE](LICENSE)
