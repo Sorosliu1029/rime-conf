@@ -20,3 +20,9 @@ patch:
       ascii_mode: true
     com.microsoft.VSCode:
       ascii_mode: true
+    com.microsoft.VSCodeInsiders:
+      ascii_mode: true
+    com.runningwithcrayons.Alfred:
+      ascii_mode: true
+    com.kapeli.dashdoc:
+      ascii_mode: true
