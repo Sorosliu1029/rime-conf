@@ -49,7 +49,6 @@ import_tables:
   - luna_pinyin.hanyu
   # - luna_pinyin.cn_en
   - luna_pinyin.computer
-  - luna_pinyin.emoji
   # - luna_pinyin.movie
   # - luna_pinyin.music
   - luna_pinyin.name
