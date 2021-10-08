@@ -7,7 +7,7 @@ patch:
     corner_radius: 3
     border_height: 5
     border_width: 5
-    inline_preedit: flase # 首行显示拼音
+    inline_preedit: false # 首行显示拼音
     # line_spacing: 1
     spacing: 5
     font_point: 16
