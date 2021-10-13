@@ -11,7 +11,7 @@ patch:
     # line_spacing: 1
     spacing: 5
     font_point: 16
-    # font_face: 'Lantinghei TC Extralight'
+    font_face: ".PingFang SC,Hack Regular Nerd Font,HanaMinA,HanaMinB"
   us_keyboard_layout: true
   app_options:
     com.jetbrains.intellij:
