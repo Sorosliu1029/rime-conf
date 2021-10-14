@@ -40,6 +40,10 @@ patch:
 
   # 載入朙月拼音擴充詞庫
   "translator/dictionary": luna_pinyin.extended
+
+  # librime-lua 输入动态时间和日期
+  "engine/translators/@6": lua_translator@date_translator
+
 __patch:
 # Rx: emoji:customize:schema=double_pinyin_flypy {
   - patch/+:

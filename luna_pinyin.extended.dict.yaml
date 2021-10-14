@@ -37,8 +37,8 @@
 ---
 name: luna_pinyin.extended
 version: "2021.04.07"
-sort: by_weight
-use_preset_vocabulary: true
+sort: by_weight # by_weight（按词频高低排序）或 original（保持原码表中的顺序）
+use_preset_vocabulary: true # true 或 false，选择是否导入预设词汇表【八股文】
 #此處爲明月拼音擴充詞庫（基本）默認鏈接載入的詞庫，有朙月拼音官方詞庫、明月拼音擴充詞庫（漢語大詞典）、明月拼音擴充詞庫（詩詞）、明月拼音擴充詞庫（含西文的詞彙）。如果不需要加載某个詞庫請將其用「#」註釋掉。
 #雙拼不支持 luna_pinyin.cn_en 詞庫，請用戶手動禁用。
 import_tables:
@@ -47,7 +47,7 @@ import_tables:
   #
   - luna_pinyin   #系统自带词库，无意外必须开启
   - luna_pinyin.hanyu
-  # - luna_pinyin.cn_en
+  # - luna_pinyin.cn_en #雙拼不支持 luna_pinyin.cn_en 詞庫，請用戶手動禁用。
   - luna_pinyin.computer
   # - luna_pinyin.movie
   # - luna_pinyin.music
