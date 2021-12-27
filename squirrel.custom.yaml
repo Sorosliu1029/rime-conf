@@ -27,3 +27,5 @@ patch:
       ascii_mode: true
     com.kapeli.dashdoc:
       ascii_mode: true
+    com.nosqlbooster.mongodb:
+      ascii_mode: true
