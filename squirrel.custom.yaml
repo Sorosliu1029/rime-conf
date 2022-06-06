@@ -31,3 +31,5 @@ patch:
       ascii_mode: true
     com.nosqlbooster.mongodb:
       ascii_mode: true
+    com.eusoft.eudic:
+      ascii_mode: true
