@@ -33,3 +33,5 @@ patch:
       ascii_mode: true
     com.eusoft.eudic:
       ascii_mode: true
+    com.raycast.macos:
+      ascii_mode: true
