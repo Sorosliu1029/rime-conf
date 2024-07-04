@@ -6,6 +6,8 @@ patch:
   style:
     color_scheme: azure
     horizontal: true
+    candidate_list_layout: linear # stacked 竖排, linear 横排
+    text_orientation: horizontal # horizontal 横排，vertical 竖排
     corner_radius: 3
     border_height: 5
     border_width: 5

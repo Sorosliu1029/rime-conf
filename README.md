@@ -17,6 +17,9 @@
 bash rime-install Sorosliu1029/rime-conf/my-double-pinyin-flypy-packages.conf
 ```
 
-本倉庫中的 `*.custom.yaml` 爲客製化文件，需要單獨複製進[用戶資料夾](https://github.com/rime/home/wiki/UserData)中
+⚠️
+
+- 本倉庫中的 `*.custom.yaml` 爲客製化文件，需要單獨複製進[用戶資料夾](https://github.com/rime/home/wiki/UserData)中
+- 本倉庫中的 `*.lua` 爲Rime腳本，需要單獨複製進[用戶資料夾](https://github.com/rime/home/wiki/UserData)中
 
 授權條款：見 [LICENSE](LICENSE)
