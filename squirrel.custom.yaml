@@ -11,7 +11,7 @@ patch:
     corner_radius: 3
     border_height: 5
     border_width: 5
-    inline_preedit: false # 首行显示拼音，true单行显示，false双行显示
+    inline_preedit: true # 首行显示拼音，true单行显示，false双行显示
     spacing: 5
     font_point: 16
     font_face: "PingFang SC Regular,HanaMinA,HanaMinB"
