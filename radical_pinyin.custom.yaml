@@ -1,0 +1,7 @@
+# radical_pinyin.custom.yaml
+#
+# 補靪：部件拆字反查使用小鹤双拼（与 rime-ice config 配方相同）
+
+patch:
+  speller/algebra:
+    __include: radical_pinyin.schema.yaml:/algebra_double_pinyin_flypy

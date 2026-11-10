@@ -1,46 +1,28 @@
-# double_pinyin.custom.yaml
+# double_pinyin_flypy.custom.yaml
 #
-# 補靪功能：將小鶴雙拼的詞庫修改爲朙月拼音擴充詞庫
-#
-# 作者：瑾昀 <cokunhui@gmail.com>
+# 補靪：雾凇拼音（rime-ice）小鹤双拼方案 + 万象语法模型
 #
 # 部署位置：
-# ~/.config/ibus/rime  (Linux)
 # ~/Library/Rime  (Mac OS)
-# %APPDATA%\Rime  (Windows)
 #
 # 於重新部署後生效
 #
-#
-# 注意：本補靪適用於所有雙拼方案（「自然碼雙拼」、「智能ABC雙拼」、「小鶴雙拼」、「MSPY雙拼」）。
-# 只須將本 custom.yaml 的前面名字改爲對應的輸入方案名字然後放入用戶文件夾重新部署即可。如 double_pinyin_abc.custom.yaml。
-# 朙月拼音用戶請使用 luna_pinyin.custom.yaml。
-#
-#
-# 附雙拼方案與其對應的 id 一覽表：
-# 輸入方案	id
-# 自然碼雙拼	double_pinyin
-# 智能ABC雙拼	double_pinyin_abc
-# 小鶴雙拼	double_pinyin_flypy
-# MSPY雙拼	double_pinyin_mspy
-#
+# 依赖：
+#   - iDvel/rime-ice（提供 double_pinyin_flypy.schema.yaml 及 rime_ice 词库）
+#   - wanxiang-lts-zh-hans.gram（https://github.com/amzxyz/RIME-LMDG/releases/tag/LTS）
 
 patch:
-  switches:                 # 注意縮進
-    - name: ascii_mode
-      # reset: 0              # reset 0 的作用是當從其他輸入方案切換到本方案時，重設爲指定的狀態，而不保留在前一個方案中設定的狀態。選擇輸入方案後通常需要立即輸入中文，故重設 ascii_mode = 0；
-      reset: 1
-      states: [ 中文, 西文 ]
-    - name: full_shape
-      states: [ 半角, 全角 ] # 而全／半角則可沿用之前方案中的用法。
-    - name: simplification
-      reset: 1              # 增加這一行：默認啓用「繁→簡」轉換。
-      states: [ 漢字, 汉字 ]
-    - name: ascii_punct
-      states: [ 。，, ．， ]
+  # 切换到本方案时默认西文（ascii_mode = 1）
+  switches/@0/reset: 1
 
-  # 載入朙月拼音擴充詞庫
-  "translator/dictionary": luna_pinyin.extended
-
-  # librime-lua 输入动态时间和日期
-  "engine/translators/@6": lua_translator@date_translator
+  # 万象语法模型，参数取自 rime-ice 的 others/recipes/grammar.recipe.yaml
+  grammar:
+    language: wanxiang-lts-zh-hans
+    collocation_max_length: 6
+    collocation_min_length: 3
+    collocation_penalty: -14
+    non_collocation_penalty: -6
+    weak_collocation_penalty: -100
+    rear_penalty: -20
+  translator/contextual_suggestions: false
+  translator/max_homophones: 8

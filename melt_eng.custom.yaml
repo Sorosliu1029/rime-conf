@@ -1,0 +1,7 @@
+# melt_eng.custom.yaml
+#
+# 補靪：英文词库使用小鹤双拼的拼写派生（与 rime-ice config 配方相同）
+
+patch:
+  speller/algebra:
+    __include: melt_eng.schema.yaml:/algebra_double_pinyin_flypy
