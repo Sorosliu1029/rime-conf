@@ -18,7 +18,7 @@ fi
 # 1. 雾凇拼音（方案、词库、Lua、OpenCC）
 (cd "$plum_dir" && rime_dir="$rime_dir" bash rime-install iDvel/rime-ice:others/recipes/full)
 
-# 2. 万象语法模型（约 200MB）；方案补靪见 double_pinyin_flypy.custom.yaml
+# 2. 万象语法模型（约 400MB）；方案补靪见 double_pinyin_flypy.custom.yaml
 curl -fL --retry 3 -o "$rime_dir/wanxiang-lts-zh-hans.gram.tmp" "$gram_url"
 mv "$rime_dir/wanxiang-lts-zh-hans.gram.tmp" "$rime_dir/wanxiang-lts-zh-hans.gram"
 
