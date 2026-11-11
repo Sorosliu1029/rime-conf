@@ -58,7 +58,7 @@ bash install.sh
 | `uuid` | 隨機 UUID |
 | 雙拼 + <code>&#96;</code> + 部件拼音 | 輔碼篩選候選，如 <code>jk&#96;ri</code> → 晶（jing 且含「日」） |
 | Emoji | 輸入「开心」「火箭」等詞，候選中會出現 😄 🚀 |
-| `mygmail`、`cmd`、`return` | `custom_phrase_double.txt` 中的自定義短語 |
+| `cmd`、`return` | `custom_phrase_double.txt` 中的自定義短語 |
 
 ### 按鍵
 
@@ -91,10 +91,6 @@ bash install.sh
 - **添加詞庫：** 見下方雾凇 README 中擴充詞庫的說明。
 
 改完後：把文件複製到 `~/Library/Rime`（或重新執行 `install.sh`），再重新部署。
-
-## 回退
-
-遷移前的用戶資料夾備份在 `~/Library/Rime.backup-20261110`。回退時交換資料夾，再重新部署：
 
 ```bash
 mv ~/Library/Rime ~/Library/Rime.rime-ice && mv ~/Library/Rime.backup-20261110 ~/Library/Rime
