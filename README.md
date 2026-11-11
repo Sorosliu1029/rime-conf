@@ -1,85 +1,85 @@
-# My Xiaohe Shuangpin (小鹤双拼) Rime config
+# 我的小鶴雙拼客製化方案
 
-[Rime](https://rime.im) config for 小鹤双拼 on Squirrel (鼠鬚管), built on [rime-ice 雾凇拼音](https://github.com/iDvel/rime-ice) with the [wanxiang grammar model](https://github.com/amzxyz/RIME-LMDG) for better first-candidate accuracy.
+[Rime](https://rime.im) 鼠鬚管小鶴雙拼配置，基於 [雾凇拼音 rime-ice](https://github.com/iDvel/rime-ice)，並啓用 [萬象語法模型](https://github.com/amzxyz/RIME-LMDG)，提升首選準確率。
 
-## Install / update
+## 安裝／更新
 
-Requires git and curl. Downloads [plum](https://github.com/rime/plum) to `~/plum` if missing.
+需要 git 及 curl；若無 [東風破 plum](https://github.com/rime/plum)，會自動下載至 `~/plum`。
 
 ```bash
 bash install.sh
 ```
 
-Then **鼠鬚管 → 重新部署** (Deploy). Run the same command later to update rime-ice's dictionaries; it never touches your learned words.
+然後在鼠鬚管選單中「重新部署」。日後更新雾凇詞庫也是執行同一命令，不會影響已學習的用戶詞。
 
-## Files
+## 文件說明
 
-| File | Purpose |
+| 文件 | 作用 |
 |---|---|
-| `default.custom.yaml` | Schema list (小鹤双拼 only), ASCII-mode switch keys, 9 candidates per page |
-| `double_pinyin_flypy.custom.yaml` | Start in ASCII mode; wanxiang grammar model |
-| `melt_eng.custom.yaml`, `radical_pinyin.custom.yaml` | English words and 拆字 lookup typed with 双拼 keys |
-| `custom_phrase_double.txt` | Pinned phrases (code = exact keys typed) |
-| `squirrel.custom.yaml` | Theme, font, apps that start in ASCII mode |
+| `default.custom.yaml` | 方案列表（僅小鶴雙拼）、中西文切換鍵、每頁 9 個候選 |
+| `double_pinyin_flypy.custom.yaml` | 默認西文、萬象語法模型 |
+| `melt_eng.custom.yaml`、`radical_pinyin.custom.yaml` | 英文混輸、部件拆字反查使用小鶴雙拼編碼 |
+| `custom_phrase_double.txt` | 自定義短語（編碼 = 實際按鍵，置頂） |
+| `squirrel.custom.yaml` | 鼠鬚管外觀、字體、各應用默認西文 |
 
-Only put changes in these `*.custom.yaml` / `custom_phrase_double.txt` files. rime-ice's own files (`*.schema.yaml`, `rime_ice.dict.yaml`, `default.yaml`, …) are overwritten on every update.
+⚠️ 只修改上述 `*.custom.yaml` 及 `custom_phrase_double.txt`。雾凇自帶的文件（`*.schema.yaml`、`rime_ice.dict.yaml`、`default.yaml` 等）每次更新都會被覆蓋。
 
-## Cheat sheet
+## 速查表
 
-### Symbols: `V` + pinyin initials of the category name
+### 符號：`V` + 類別名稱的拼音首字母
 
-| Type | Category | Initials | Examples |
+| 輸入 | 類別 | 首字母 | 示例 |
 |---|---|---|---|
-| `Vsx` | 数学 math | **s**hù **x**ué | ± × ÷ ≠ ≈ ≤ ≥ √ ∑ ∫ ∞ ∈ ∩ ∪ |
-| `Vxl` / `Vxld` | 希腊 Greek (+ 大写 upper) | **x**ī **l**à (**d**à) | α β π λ / Δ Σ Ω |
-| `Vsb` / `Vxb` | 上标 / 下标 super / subscript | **s**hàng **b**iāo / **x**ià **b**iāo | ¹ ² ³ / ₁ ₂ ₃ |
-| `Vfs` | 分数 fraction | **f**ēn **s**hù | ½ ⅓ ¼ |
-| `Vjt` | 箭头 arrow | **j**iàn **t**óu | → ← ⇒ ↔ |
-| `Vdw` | 单位 unit | **d**ān **w**èi | ° ℃ ‰ ㎏ |
-| `Vjh` | 几何 shapes | **j**ǐ **h**é | ■ □ ▲ ◆ |
-| `Vbq` | 表情 emoticon | **b**iǎo **q**íng | ☺ ☹ |
-| `V` + letter/digit | variants | | `V2` → ² ₂ ② |
-| `Vhelp` | **list of all categories** | | |
+| `Vsx` | 數學 | **s**hù **x**ué | ± × ÷ ≠ ≈ ≤ ≥ √ ∑ ∫ ∞ ∈ ∩ ∪ |
+| `Vxl` / `Vxld` | 希臘字母（＋大寫） | **x**ī **l**à（**d**à） | α β π λ / Δ Σ Ω |
+| `Vsb` / `Vxb` | 上標／下標 | **s**hàng **b**iāo / **x**ià **b**iāo | ¹ ² ³ / ₁ ₂ ₃ |
+| `Vfs` | 分數 | **f**ēn **s**hù | ½ ⅓ ¼ |
+| `Vjt` | 箭頭 | **j**iàn **t**óu | → ← ⇒ ↔ |
+| `Vdw` | 單位 | **d**ān **w**èi | ° ℃ ‰ ㎏ |
+| `Vjh` | 幾何 | **j**ǐ **h**é | ■ □ ▲ ◆ |
+| `Vbq` | 表情 | **b**iǎo **q**íng | ☺ ☹ |
+| `V` + 字母／數字 | 變體 | | `V2` → ² ₂ ② |
+| `Vhelp` | **列出全部類別** | | |
 
-Codes are full-pinyin initials, not 双拼 keys (上标 is `sb`). Full list: [symbols_caps_v.yaml](https://github.com/iDvel/rime-ice/blob/main/symbols_caps_v.yaml).
+編碼是全拼首字母，不是雙拼按鍵（上標是 `sb`）。完整列表：[symbols_caps_v.yaml](https://github.com/iDvel/rime-ice/blob/main/symbols_caps_v.yaml)。
 
-### Other triggers
+### 其他觸發
 
-| Type | Result |
+| 輸入 | 結果 |
 |---|---|
-| `date` / `time` / `week` | 2026-11-10 / 18:13 / 星期二 (several formats each) |
-| `datetime` / `timestamp` | ISO 8601 / Unix timestamp |
-| `lunar` | Today in the Chinese lunar calendar |
-| `N20261110` | Convert a date to the lunar calendar |
-| `R1234.5` | Chinese numerals / 大写金额 (壹仟贰佰…) |
-| `cC2*3+1` | Calculator → `7` |
-| `U221a` | Unicode code point → √ |
-| `uU` + pinyin of parts | Look up a character by its components (拆字), e.g. `uUririri` → 晶 |
-| `uuid` | Random UUID |
-| 双拼 + <code>&#96;</code> + component pinyin | Filter candidates by a component (辅码), e.g. <code>jk&#96;ri</code> → 晶 (jing with 日) |
-| emoji | Typing a word like 开心 / 火箭 offers 😄 / 🚀 as a candidate |
-| `mygmail`, `cmd`, `return` | Own phrases from `custom_phrase_double.txt` |
+| `date` / `time` / `week` | 2026-11-10 / 18:13 / 星期二（各有多種格式） |
+| `datetime` / `timestamp` | ISO 8601 / Unix 時間戳 |
+| `lunar` | 今日農曆 |
+| `N20261110` | 公曆轉農曆 |
+| `R1234.5` | 中文數字／大寫金額（壹仟貳佰……） |
+| `cC2*3+1` | 計算器 → `7` |
+| `U221a` | Unicode 碼位 → √ |
+| `uU` + 部件拼音 | 部件拆字反查，如 `uUririri` → 晶 |
+| `uuid` | 隨機 UUID |
+| 雙拼 + <code>&#96;</code> + 部件拼音 | 輔碼篩選候選，如 <code>jk&#96;ri</code> → 晶（jing 且含「日」） |
+| Emoji | 輸入「开心」「火箭」等詞，候選中會出現 😄 🚀 |
+| `mygmail`、`cmd`、`return` | `custom_phrase_double.txt` 中的自定義短語 |
 
-### Keys
+### 按鍵
 
-| Key | Action |
+| 按鍵 | 作用 |
 |---|---|
-| `Space` | First candidate |
-| `[` / `]` | Commit only the **first / last character** of the highlighted word (以词定字) |
-| `-` / `=` | Previous / next page |
-| `Tab` / `Shift+Tab` | Move cursor to next / previous syllable |
-| `Return` | Commit the raw keys as typed |
-| `Ctrl+Delete` (`Ctrl+fn+⌫`) | Remove a wrongly learned word from your user dictionary |
-| Right `Shift` | Toggle Chinese / ASCII mode (commits what's typed) |
-| `Ctrl+Shift+3` | Toggle Chinese / ASCII punctuation |
-| `Ctrl+Shift+4` | Toggle Simplified / Traditional output |
-| <code>Cmd+&#96;</code> or <code>Ctrl+Shift+&#96;</code> | Rime menu (switches for emoji, full-width, …) |
+| `空格` | 上屏首選 |
+| `[` / `]` | 以詞定字：只上屏選中詞的**首字／末字** |
+| `-` / `=` | 上一頁／下一頁 |
+| `Tab` / `Shift+Tab` | 光標移至下一個／上一個音節 |
+| `回車` | 上屏原始按鍵 |
+| `Ctrl+Delete`（`Ctrl+fn+⌫`） | 從用戶詞庫刪除錯誤學習的詞 |
+| 右 `Shift` | 切換中文／西文（並上屏已輸入的編碼） |
+| `Ctrl+Shift+3` | 切換中／英標點 |
+| `Ctrl+Shift+4` | 切換簡／繁輸出 |
+| <code>Cmd+&#96;</code> 或 <code>Ctrl+Shift+&#96;</code> | Rime 選單（Emoji、全角等開關） |
 
-## Tuning accuracy
+## 調整準確率
 
-- **Rime learns from you.** Picking a non-first candidate raises it next time; give it a few days after the migration.
-- **Wrong word learned?** Highlight it and press `Ctrl+Delete`.
-- **Pin a candidate for a code** (e.g. always 了 first for `le`): add to `double_pinyin_flypy.custom.yaml`, using full-pinyin codes because the preedit shows full pinyin:
+- **Rime 會學習你的選擇。** 選了非首選的候選，下次會排得更前；遷移後需幾天適應。
+- **學錯了詞？** 選中該候選，按 `Ctrl+Delete`。
+- **固定某編碼的首選**（如 `le` 總是「了」）：加到 `double_pinyin_flypy.custom.yaml`。編碼要寫全拼，因爲輸入框顯示的是全拼：
 
   ```yaml
   patch:
@@ -87,25 +87,25 @@ Codes are full-pinyin initials, not 双拼 keys (上标 is `sb`). Full list: [sy
       - "le	了"
   ```
 
-- **Add your own phrase:** append `text<Tab>code` to `custom_phrase_double.txt`. Use codes that aren't valid 双拼 sequences (whole English words, odd letter combos); a pinned phrase on a real 双拼 code pushes the Chinese word off `Space`.
-- **Add a word list:** see the rime-ice README section on extending dictionaries (link below).
+- **添加自定義短語：** 在 `custom_phrase_double.txt` 末尾加 `詞彙<Tab>編碼`。編碼要用不構成雙拼的組合（完整英文單詞、少見字母組合）；若用了真實的雙拼編碼，置頂短語會把中文首選擠下空格。
+- **添加詞庫：** 見下方雾凇 README 中擴充詞庫的說明。
 
-After any change: copy the file to `~/Library/Rime` (or rerun `install.sh`) and redeploy.
+改完後：把文件複製到 `~/Library/Rime`（或重新執行 `install.sh`），再重新部署。
 
-## Rollback
+## 回退
 
-The pre-migration user folder is at `~/Library/Rime.backup-20261110`. To restore, swap the folders, then redeploy:
+遷移前的用戶資料夾備份在 `~/Library/Rime.backup-20261110`。回退時交換資料夾，再重新部署：
 
 ```bash
 mv ~/Library/Rime ~/Library/Rime.rime-ice && mv ~/Library/Rime.backup-20261110 ~/Library/Rime
 ```
 
-## Links
+## 參考鏈接
 
-- [rime-ice README](https://github.com/iDvel/rime-ice#readme): install, updating, FAQ (grammar model, how to customize)
-- [rime-ice blog post](https://dvel.me/posts/rime-ice/): design notes and extra tips
-- [rime-ice schema for 小鹤双拼](https://github.com/iDvel/rime-ice/blob/main/double_pinyin_flypy.schema.yaml): every option, commented
-- [RIME-LMDG](https://github.com/amzxyz/RIME-LMDG): the grammar model
-- [Rime customization guide](https://github.com/rime/home/wiki/CustomizationGuide): how `*.custom.yaml` patches work
+- [雾凇拼音 README](https://github.com/iDvel/rime-ice#readme)：安裝、更新、常見問題（語法模型、如何客製化）
+- [雾凇拼音博客](https://dvel.me/posts/rime-ice/)：設計說明及更多技巧
+- [雾凇小鶴雙拼方案](https://github.com/iDvel/rime-ice/blob/main/double_pinyin_flypy.schema.yaml)：所有選項，附註釋
+- [RIME-LMDG](https://github.com/amzxyz/RIME-LMDG)：語法模型
+- [Rime 定製指南](https://github.com/rime/home/wiki/CustomizationGuide)：`*.custom.yaml` 補靪的原理
 
-License: see [LICENSE](LICENSE)
+授權條款：見 [LICENSE](LICENSE)
