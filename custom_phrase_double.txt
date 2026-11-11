@@ -12,4 +12,3 @@
 ⌘	cmd
 ⏎	return
 soros.liu1029@gmail.com	mygmail
-math	math
