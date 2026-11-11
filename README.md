@@ -92,10 +92,6 @@ bash install.sh
 
 改完後：把文件複製到 `~/Library/Rime`（或重新執行 `install.sh`），再重新部署。
 
-```bash
-mv ~/Library/Rime ~/Library/Rime.rime-ice && mv ~/Library/Rime.backup-20261110 ~/Library/Rime
-```
-
 ## 參考鏈接
 
 - [雾凇拼音 README](https://github.com/iDvel/rime-ice#readme)：安裝、更新、常見問題（語法模型、如何客製化）
