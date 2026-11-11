@@ -9,8 +9,7 @@
 #
 # 此行之后不能写注释
 
-Markdown	markdown
-Wiki	wiki
 ⌘	cmd
 ⏎	return
 soros.liu1029@gmail.com	mygmail
+math	math
